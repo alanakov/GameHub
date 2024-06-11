@@ -27,7 +27,7 @@
                 <div class="collapse navbar-collapse flex-grow-0 text-center" id="navbarNav">
                     <ul class="navbar-nav position-relative"">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">HOME</a>
+                            <a class="nav-link" href="#">HOM</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">CONTATO</a>
