@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/6578787cbc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -27,19 +28,57 @@
                 <div class="collapse navbar-collapse flex-grow-0 text-center" id="navbarNav">
                     <ul class="navbar-nav position-relative"">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">HOM</a>
+                            <a class="nav-link" href="#">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTATO</a>
+                            <a class="nav-link" href="#">EQUIPE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">MEMBROS</a>
+                        <li class="nav-item">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <i class="fa-solid fa-message"></i>
+                                CONTATO
+                            </button>
+                        </li>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-bs-theme="dark">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">ENTRE EM CONTATO!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label text-white">Nome completo:</label>
+                            <input type="text" class="form-control" id="recipient-name" placeholder="&#xf007 Digite seu nome" style="font-family: 'Poppins','FontAwesome'">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label text-white">E-mail:</label>
+                            <input type="text" class="form-control" id="recipient-name" placeholder="&#xf0e0 exemplo@exem.com" style="font-family: 'Poppins','FontAwesome'">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label text-white">Mensagem:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CANCELAR</button>
+                    <button type="button" class="btn btn-danger">ENVIAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <main>
 
