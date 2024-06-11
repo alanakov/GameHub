@@ -19,7 +19,7 @@
                 <a class="navbar-brand d-flex" href="#">
                     <img src="imagens/logoGameHubVerm.png" style="width: 65px;" alt="">
                     <p class="d-none d-md-block" style="color: #DB3A34;">Game</p>
-                    <p class="d-none d-md-block">Hub</p>
+                    <p class="d-none d-md-block text-white">Hub</p>
                 </a>
                 <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
