@@ -24,7 +24,7 @@ $dadosBannersApi = json_decode($dadosApi);
   foreach ($dadosBannersApi as $banners) {
     ?>
     <div class="carousel-item <?php echo $primeiroItem ? 'active' : ''; ?>">
-      <img src="<?= $banners->imagem ?>" class="d-block w-100" alt="...">
+      <img src="<?= $banners->imagem ?>" class="d-block w-100" alt="Banners dos jogos destacados">
     </div>
     <?php
     $primeiroItem = false;
