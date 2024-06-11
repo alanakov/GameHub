@@ -20,16 +20,18 @@ $dadosGamesApi = json_decode($dadosApi);
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
   </div>
   <div class="carousel-inner">
-    <?php
-    foreach($dadosGamesApi as $games) {
-      ?>
-      <div class="carousel-item active">
-      <img src="<?=$games->banner ?>" class="d-block w-100" alt="...">
-      </div>
-      <?php
-    }
+  <?php
+  $primeiroItem = true;
+  foreach ($dadosGamesApi as $games) {
     ?>
-  </div>
+    <div class="carousel-item <?php echo $primeiroItem ? 'active' : ''; ?>">
+      <img src="<?= $games->banner ?>" class="d-block w-100" alt="...">
+    </div>
+    <?php
+    $primeiroItem = false;
+  }
+  ?>
+</div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
