@@ -7,9 +7,9 @@ $arrContextOptions=array(
   ),
 );  
 
-$url = "https://localhost/Project2/api/games.php";
+$url = "https://localhost/Project2/api/banners.php";
 $dadosApi = file_get_contents($url, false, stream_context_create($arrContextOptions));
-$dadosGamesApi = json_decode($dadosApi);
+$dadosBannersApi = json_decode($dadosApi);
 ?>
 
 <div id="carouselExampleIndicators" class="carousel slide">
@@ -17,15 +17,14 @@ $dadosGamesApi = json_decode($dadosApi);
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
   </div>
   <div class="carousel-inner">
   <?php
   $primeiroItem = true;
-  foreach ($dadosGamesApi as $games) {
+  foreach ($dadosBannersApi as $banners) {
     ?>
     <div class="carousel-item <?php echo $primeiroItem ? 'active' : ''; ?>">
-      <img src="<?= $games->banner ?>" class="d-block w-100" alt="...">
+      <img src="<?= $banners->imagem ?>" class="d-block w-100" alt="...">
     </div>
     <?php
     $primeiroItem = false;
