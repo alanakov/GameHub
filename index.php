@@ -83,6 +83,7 @@
     <main>
 
         <?php
+        //URL
         if (isset($_GET["param"])) {
             $param = $_GET["param"];
             $p = explode("/", $param);
@@ -102,6 +103,9 @@
         } else {
             include "paginas/erro.php";
         }
+
+        //API
+        $url = ""
         ?>
     </main>
 
