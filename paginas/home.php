@@ -15,9 +15,9 @@ $urlGamesDestaque1 = "https://localhost/Project2/api/gamesDestaque1.php";
 $dadosApi = file_get_contents($urlGamesDestaque1, false, stream_context_create($arrContextOptions));
 $dadosGamesDestaqueApi1 = json_decode($dadosApi);
 
-$urlGamesDestaque2 = "https://localhost/Project2/api/gamesDestaque2.php";
-$dadosApi = file_get_contents($urlGamesDestaque2, false, stream_context_create($arrContextOptions));
-$dadosGamesDestaqueApi2 = json_decode($dadosApi);
+$urlGamesPromocao= "https://localhost/Project2/api/gamesPromocao.php";
+$dadosApi = file_get_contents($urlGamesPromocao, false, stream_context_create($arrContextOptions));
+$dadosGamesPromocao = json_decode($dadosApi);
 ?>
 
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -53,27 +53,30 @@ $dadosGamesDestaqueApi2 = json_decode($dadosApi);
 </div>
 
 <div> <!-- JOGOS EM DESTAQUE -->
-  <p class="fs-4 text-white mt-5 ms-3"><strong>JOGOS EM DESTAQUES</strong></p>
-  <a href="">
-    <div class=" m-5 d-flex justify-content-center">
-      <div class="card " style="width: 64rem; background-color: #101010;">
-        <img src="imagens/meowtopiaBanner.jpg" class="card-img-top" alt="...">
+  <p class="fs-4 text-white mt-5 ms-5"><strong>JOGOS EM DESTAQUES</strong></p>
+
+  <div class=" m-5 d-flex justify-content-center">
+    <a class="text-decoration-none" href="">
+      <div class="card rounded-4" style="width: 64rem; background-color: #101010;">
+        <p class="bg-danger text-white p-2 m-0 rounded-end-3 position-absolute d-flex float-end">MAIS JOGADOS</p>
+        <img src="imagens/meowtopiaBanner.jpg" class="card-img-top rounded-top-4" alt="...">
         <div class="card-body">
           <p class="card-text text-white">Meowtopia</p>
           <p class="card-text" style="color: #707070">Casual • Mistério</p>
         </div>
       </div>
-    </div>
-  </a>
+    </a>
+  </div>
 
-  <div class="cards container d-flex justify-content-center">
+
+  <div class="cards container d-md-flex justify-content-center">
     <?php
     foreach ($dadosGamesDestaqueApi1 as $gamesDestaque1) {
       ?>
-      <div class="container d-flex justify-content-center">
-        <div class="card" style="width: <?= $gamesDestaque1->width ?>; background-color: #101010;">
-          <a href="">
-            <img src="<?= $gamesDestaque1->banner ?>" class="card-img-top" alt="...">
+      <div class="container p-3 d-flex justify-content-center">
+        <div class="card rounded-4" style="width: <?= $gamesDestaque1->width ?>; background-color: #101010;">
+          <a class="text-decoration-none" href="">
+            <img src="<?= $gamesDestaque1->banner ?>" class="card-img-top rounded-top-4" alt="...">
             <div class="card-body">
               <p class="card-text text-white"><?= $gamesDestaque1->nome ?> </p>
               <p class="card-text" style="color: #707070"><?= $gamesDestaque1->genero ?></p>
@@ -88,5 +91,26 @@ $dadosGamesDestaqueApi2 = json_decode($dadosApi);
 </div> <!-- FIM JOGOS EM DESTAQUE -->
 
 <div> <!-- JOGOS EM PROMOÇÃO -->
-  <p class="fs-4 text-white mt-5 ms-3"><strong>JOGOS EM PROMOÇÃO</strong></p>
+  <p class="fs-4 text-white mt-5 ms-5"><strong>JOGOS EM PROMOÇÃO</strong></p>
+
+  <div class="cards container d-md-flex justify-content-center">
+    <?php
+    foreach ($dadosGamesPromocao as $gamesPromocao) {
+      ?>
+      <div class="container p-3 d-flex justify-content-center">
+        <div class="card rounded-4" style="width: <?= $gamesPromocao->width ?>; background-color: #101010;">
+          <a class="text-decoration-none" href="">
+            <p class="bg-danger text-white p-2 m-0 rounded-end-3 position-absolute d-flex float-end"><?= $gamesPromocao->desconto?></p>
+            <img src="<?= $gamesPromocao->banner ?>" class="card-img-top rounded-top-4" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white"><?= $gamesPromocao->nome ?> </p>
+              <p class="card-text" style="color: #707070"><?= $gamesPromocao->genero ?></p>
+            </div>
+        </div>
+        </a>
+      </div>
+      <?php
+    }
+    ?>
+  </div>
 </div>

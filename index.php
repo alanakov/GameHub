@@ -8,6 +8,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="imagens/logoGameHubBranca.png">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/6578787cbc.js" crossorigin="anonymous"></script>
 </head>
@@ -21,14 +22,15 @@
                     <p class="d-none d-md-block" style="color: #DB3A34;">Game</p>
                     <p class="d-none d-md-block text-white">Hub</p>
                 </a>
-                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse flex-grow-0 text-center" id="navbarNav">
                     <ul class="navbar-nav position-relative"">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">HOME</a>
+                        <li class=" nav-item">
+                        <a class="nav-link" href="#">HOME</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">EQUIPE</a>
@@ -60,11 +62,13 @@
                     <form>
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label text-white">Nome completo:</label>
-                            <input type="text" class="form-control" id="recipient-name" placeholder="&#xf007 Digite seu nome" style="font-family: 'Poppins','FontAwesome'">
+                            <input type="text" class="form-control" id="recipient-name"
+                                placeholder="&#xf007 Digite seu nome" style="font-family: 'Poppins','FontAwesome'">
                         </div>
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label text-white">E-mail:</label>
-                            <input type="text" class="form-control" id="recipient-name" placeholder="&#xf0e0 exemplo@exem.com" style="font-family: 'Poppins','FontAwesome'">
+                            <input type="text" class="form-control" id="recipient-name"
+                                placeholder="&#xf0e0 exemplo@exem.com" style="font-family: 'Poppins','FontAwesome'">
                         </div>
                         <div class="mb-3">
                             <label for="message-text" class="col-form-label text-white">Mensagem:</label>
@@ -106,7 +110,7 @@
 
         //API
         $url = ""
-        ?>
+            ?>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
