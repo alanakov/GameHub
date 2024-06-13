@@ -17,10 +17,10 @@ $dadosEquipeApi = json_decode($dadosApi);
 
 <div class=" m-5 d-flex justify-content-center">
       <div class="card rounded-4" style="width: 20rem; background-color: #101010;">
-        <p class="bg-danger text-white p-2 m-0 rounded-end-3 position-absolute d-flex float-end">LÍDER</p>
+        <p class="bg-danger text-white p-2 m-0 rounded-end-3 position-absolute d-flex float-end">CEO</p>
         <img src="imagens/alanaKov.jpg" class="card-img-top rounded-top-4" alt="Alana Kovalski">
         <div class="card-body">
-          <p class="card-text text-white">Meowtopia</p>
+          <p class="card-text text-white">Alana Kovalski de Angeli</p>
           <p class="card-text" style="color: #707070">Desenvolvedor de Games • CEO • Diretora de Arte</p>
         </div>
       </div>
