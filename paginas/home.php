@@ -56,7 +56,7 @@ $dadosGamesPromocao = json_decode($dadosApi);
   <p class="fs-4 text-white mt-5 ms-5"><strong>JOGOS EM DESTAQUES</strong></p>
 
   <div class=" m-5 d-flex justify-content-center">
-    <a class="text-decoration-none" href="">
+    <a class="text-decoration-none" href="index.php?pg=jogo-meowtopia">
       <div class="card rounded-4" style="width: 64rem; background-color: #101010;">
         <p class="bg-danger text-white p-2 m-0 rounded-end-3 position-absolute d-flex float-end">MAIS JOGADOS</p>
         <img src="imagens/meowtopiaBanner.jpg" class="card-img-top rounded-top-4" alt="...">

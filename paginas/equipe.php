@@ -1,1 +1,1 @@
-<h1>EQUIPE</h1>
+<h1>thiago lindo</h1>

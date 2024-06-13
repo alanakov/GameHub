@@ -17,7 +17,7 @@
     <header>
         <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand d-flex" href="#">
+                <a class="navbar-brand d-flex" href="index.php?pg=home">
                     <img src="imagens/logoGameHubVerm.png" style="width: 65px;" alt="">
                     <p class="d-none d-md-block" style="color: #DB3A34;">Game</p>
                     <p class="d-none d-md-block text-white">Hub</p>
@@ -33,7 +33,7 @@
                         <a class="nav-link" href="#">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">EQUIPE</a>
+                            <a class="nav-link" href="index.php?pg=equipe">EQUIPE</a>
                         </li>
                         <li class="nav-item">
                         <li class="nav-item">
@@ -87,8 +87,26 @@
     <main>
 
         <?php
+
+        $pg = $_GET["pg"] ?? "home";
+        $pg = "paginas/$pg.php";
+
+        if (file_exists($pg)) {
+            include $pg;
+        } else {
+            echo "nao foi dessa  vez bb";
+        }
+
+
+
+
+
+
+
+
+
         //URL
-        if (isset($_GET["param"])) {
+        /* if (isset($_GET["param"])) {
             $param = $_GET["param"];
             $p = explode("/", $param);
         }
@@ -109,8 +127,8 @@
         }
 
         //API
-        $url = ""
-            ?>
+        $url = "" */
+        ?>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
