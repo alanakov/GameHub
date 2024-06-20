@@ -13,6 +13,7 @@
             </div>
         </div>
         <img src="imagens/foto-cuphead-grande-1.jpg" alt="aaaaaaaaa">
+        
     </div>
 
 
