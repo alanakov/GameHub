@@ -1,6 +1,6 @@
 <img class="w-100" src="imagens/meowtopiaBanner.jpg" alt="Meowtopia">
 
-<div class="d-md-flex flex-md-row">
+<div class="d-xl-flex flex-xl-row">
     <div class="d-flex flex-column m-5 gap-3">
         <div class="d-flex">
             <h2 class="text-white"><strong>Meowtopia</strong></h2>
@@ -25,8 +25,11 @@
                 detetive que parece ter seus próprios segredos.</p>
 
 
-            <div class="mt-5">
+            <div class="mt-xl-5 d-none d-md-block">
                 <a href="#" class="btn bg-danger text-white fs-6 fw-semibold px-5 p-2 d-flex justify-content-center" style="margin-top: 42%">JOGAR AGORA</a>
+            </div>
+            <div class="d-md-none d-block mt-5 text-center text-danger">
+                <p>O JOGO ESTÁ DISPONÍVEL SOMENTE PARA COMPUTADORES</p>
             </div>
         </div>
     </div>

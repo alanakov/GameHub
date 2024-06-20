@@ -8,7 +8,7 @@ $arrContextOptions = array(
   );
   
 
-$urlEquipe = "https://localhost/Project2/api/equipe.php";
+$urlEquipe = "https://localhost/GameHub/api/equipe.php";
 $dadosApi = file_get_contents($urlEquipe, false, stream_context_create($arrContextOptions));
 $dadosEquipeApi = json_decode($dadosApi);
 ?>

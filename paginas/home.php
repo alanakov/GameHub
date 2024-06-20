@@ -7,17 +7,21 @@ $arrContextOptions = array(
   ),
 );
 
-$urlBanners = "https://localhost/Project2/api/banners.php";
+$urlBanners = "https://localhost/GameHub/api/banners.php";
 $dadosApi = file_get_contents($urlBanners, false, stream_context_create($arrContextOptions));
 $dadosBannersApi = json_decode($dadosApi);
 
-$urlGamesDestaque1 = "https://localhost/Project2/api/gamesDestaque1.php";
+$urlGamesDestaque1 = "https://localhost/GameHub/api/gamesDestaque1.php";
 $dadosApi = file_get_contents($urlGamesDestaque1, false, stream_context_create($arrContextOptions));
 $dadosGamesDestaqueApi1 = json_decode($dadosApi);
 
-$urlGamesPromocao= "https://localhost/Project2/api/gamesPromocao.php";
-$dadosApi = file_get_contents($urlGamesPromocao, false, stream_context_create($arrContextOptions));
-$dadosGamesPromocao = json_decode($dadosApi);
+$urlGamesOutros= "https://localhost/GameHub/api/gamesOutros.php";
+$dadosApi = file_get_contents($urlGamesOutros, false, stream_context_create($arrContextOptions));
+$dadosGamesOutros = json_decode($dadosApi);
+
+$urlGamesOutros2= "https://localhost/GameHub/api/gamesOutros2.php";
+$dadosApi = file_get_contents($urlGamesOutros2, false, stream_context_create($arrContextOptions));
+$dadosGamesOutros2 = json_decode($dadosApi);
 ?>
 
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -90,21 +94,39 @@ $dadosGamesPromocao = json_decode($dadosApi);
   </div>
 </div>                                                                           <!-- FIM JOGOS EM DESTAQUE -->
 
-<div>                                                                            <!-- JOGOS EM PROMOÇÃO -->
-  <p class="fs-4 text-white mt-5 ms-5"><strong>JOGOS EM PROMOÇÃO</strong></p>
+<div>                                                                            <!-- OUTROS TÍTULOS -->
+  <p class="fs-4 text-white mt-5 ms-5"><strong>EXPLORE MAIS TÍTULOS</strong></p>
 
   <div class="cards container d-md-flex justify-content-center">
     <?php
-    foreach ($dadosGamesPromocao as $gamesPromocao) {
+    foreach ($dadosGamesOutros as $gamesOutros) {
       ?>
       <div class="container p-3 d-flex justify-content-center">
-        <div class="card rounded-4" style="width: <?= $gamesPromocao->width ?>; background-color: #101010;">
+        <div class="card rounded-4" style="width: <?= $gamesOutros->width ?>; background-color: #101010;">
           <a class="text-decoration-none" href="">
-            <p class="bg-danger text-white p-2 m-0 rounded-end-3 position-absolute d-flex float-end"><?= $gamesPromocao->desconto?></p>
-            <img src="<?= $gamesPromocao->banner ?>" class="card-img-top rounded-top-4" alt="...">
+            <img src="<?= $gamesOutros->banner ?>" class="card-img-top rounded-top-4" alt="...">
             <div class="card-body">
-              <p class="card-text text-white"><?= $gamesPromocao->nome ?> </p>
-              <p class="card-text" style="color: #707070"><?= $gamesPromocao->genero ?></p>
+              <p class="card-text text-white"><?= $gamesOutros->nome ?> </p>
+              <p class="card-text" style="color: #707070"><?= $gamesOutros->genero ?></p>
+            </div>
+        </div>
+        </a>
+      </div>
+      <?php
+    }
+    ?>
+  </div>
+  <div class="cards container d-md-flex justify-content-center">
+    <?php
+    foreach ($dadosGamesOutros2 as $gamesOutros2) {
+      ?>
+      <div class="container p-3 d-flex justify-content-center">
+        <div class="card rounded-4" style="width: <?= $gamesOutros2->width ?>; background-color: #101010;">
+          <a class="text-decoration-none" href="">
+            <img src="<?= $gamesOutros2->banner ?>" class="card-img-top rounded-top-4" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white"><?= $gamesOutros2->nome ?> </p>
+              <p class="card-text" style="color: #707070"><?= $gamesOutros2->genero ?></p>
             </div>
         </div>
         </a>
