@@ -1,3 +1,17 @@
+<?php
+//file_get_contents funcionar
+$arrContextOptions = array(
+    "ssl" => array(
+        "verify_peer" => false,
+        "verify_peer_name" => false,
+    ),
+);
+
+$urlFotos = "https://localhost/GameHub/api/fotos.php";
+$dadosApi = file_get_contents($urlFotos, false, stream_context_create($arrContextOptions));
+$dadosFotosApi = json_decode($dadosApi);
+?>
+
 <img class="w-100" src="imagens/meowtopiaBanner.jpg" alt="Meowtopia">
 
 <div class="d-xl-flex flex-xl-row">
@@ -12,8 +26,32 @@
                 <i class="fa-solid fa-star text-white fs-5"></i>
             </div>
         </div>
-        <img src="imagens/foto-cuphead-grande-1.jpg" alt="aaaaaaaaa">
-        
+        <div id="carouselExampleIndicators" class="carousel slide container">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagens/foto-meowtopia-grande-1.jpeg" class="d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/foto-meowtopia-grande-2.jpeg" class="d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/foto-meowtopia-grande-3.jpeg" class="d-block" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </div>
 
 
