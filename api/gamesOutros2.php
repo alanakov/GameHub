@@ -12,7 +12,7 @@
     "genero"=>"Aventura • Terror","banner"=>"imagens/snakeHungry.jpeg",
     "width" => "18rem");
 
-    $games[6] = array("id"=>4, "nome"=>"A Arte da Ocultação", "descricao"=>"<p>você é um habilidoso shinobi em um jogo 2D, lutando contra hordas de esqueletos. Acumule pontos derrotando inimigos cada vez mais desafiadores. Alcance a pontuação final para vencer e trazer paz ao mundo assombrado.</p>",
+    $games[6] = array("id"=>4, "nome"=>"A Arte da Ocultação", "descricao"=>"<p>Você é um habilidoso shinobi em um jogo 2D, lutando contra hordas de esqueletos. Acumule pontos derrotando inimigos cada vez mais desafiadores. Alcance a pontuação final para vencer e trazer paz ao mundo assombrado.</p>",
     "genero"=>"Aventura • Mistério","banner"=>"imagens/aArteDaOcultacao.jpeg",
     "width" => "18rem");
 

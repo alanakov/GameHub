@@ -60,3 +60,8 @@ nav .navbar .container-fluid ul .navbar-nav li .nav-item a::after {
         width: 45px;
     }
 }
+
+.divPlayHover a:hover{
+    background-color: #000000;
+    transition: 0.5s;
+}
