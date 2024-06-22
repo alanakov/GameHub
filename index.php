@@ -58,29 +58,43 @@
                     <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">ENTRE EM CONTATO!</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    <form id="form">
+                <form id="form" action="https://formsubmit.co/alana.angeli@grupointegrado.br" method="POST">
+                    <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div class="modal-body">
                         <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label text-white">Nome completo:</label>
-                            <input type="text" class="form-control required" id="recipient-name" placeholder="&#xf007 Digite seu nome" style="font-family: 'Poppins','FontAwesome'" oninput="nameValidate()">
-                            <span class="span-required text-danger" style="display: none; font-size: 16px; margin-top: 1.5%">Nome deve ter no mínimo 3 caracteres</span>
+                            <label for="full-name" class="col-form-label text-white">Nome completo:</label>
+                            <input type="text" class="form-control required" id="full-name"
+                                placeholder="&#xf007 Digite seu nome" style="font-family: 'Poppins','FontAwesome'"
+                                oninput="nameValidate()">
+                            <span class="span-required text-danger"
+                                style="display: none; font-size: 16px; margin-top: 1.5%">Nome deve ter no mínimo 3
+                                caracteres</span>
                         </div>
                         <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label text-white">E-mail:</label>
-                            <input type="email" class="form-control required" id="recipient-name" placeholder="&#xf0e0 exemplo@exem.com" style="font-family: 'Poppins','FontAwesome'" oninput="emailValidate()">
-                            <span class="span-required text-danger" style="display: none; font-size: 16px; margin-top: 1.5%">Digite um e-mail válido</span>
+                            <label for="email" class="col-form-label text-white">E-mail:</label>
+                            <input type="email" class="form-control required" id="email"
+                                placeholder="&#xf0e0 exemplo@exem.com" style="font-family: 'Poppins','FontAwesome'"
+                                oninput="emailValidate()">
+                            <span class="span-required text-danger"
+                                style="display: none; font-size: 16px; margin-top: 1.5%">Digite um e-mail válido</span>
                         </div>
                         <div class="mb-3">
                             <label for="message-text" class="col-form-label text-white">Mensagem:</label>
-                            <textarea class="form-control required" id="message-text" oninput="messageValidate()"></textarea>
-                            <span class="span-required" style="display: none; font-size: 16px; margin-top: 1.5%; color: #979797">Digite a mensagem que deseja enviar</span>
+                            <textarea class="form-control required" id="message-text"></textarea>
+                            <span class="span-required"
+                                style="display: none; font-size: 16px; margin-top: 1.5%; color: #979797">Digite a
+                                mensagem que deseja enviar</span>
                         </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CANCELAR</button>
-                    <button type="submit" value="Submit" class="btn btn-danger">ENVIAR</button>
-                </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CANCELAR</button>
+                        <button type="submit" value="Enviar" class="btn btn-danger button"
+                            onclick="messageSent()">ENVIAR</button>
+                    </div>
+                    <p>SUA MENSAGEM FOI ENVIADA!</p>
+                </form>
             </div>
         </div>
     </div>
@@ -154,11 +168,16 @@
 
     form.addEventListener('submit', (event) => {
         event.preventDefault();
-        console.log('asdasdwa');
+        nameValidate();
+        emailValidate();
     });
 
     function setError(index) {
         campos[index].style.border = '1px solid #e63636';
+        spans[index].style.display = 'block';
+    }
+
+    function messageSuccess(index) {
         spans[index].style.display = 'block';
     }
 
@@ -169,7 +188,7 @@
 
 
     function nameValidate() {
-        if(campos[0].value.length < 3) {
+        if (campos[0].value.length < 3) {
             setError(0);
         } else {
             removeError(0);
@@ -177,12 +196,27 @@
     }
 
     function emailValidate() {
-        if(!emailRegex.test(campos[1].value)) {
+        if (!emailRegex.test(campos[1].value)) {
             setError(1);
         } else {
             removeError(1);
         }
     }
+
+    function messageSent() {
+        messageSuccess();
+    }
+
+
+    //document.getElementById('form').addEventListener('submit', function(event) {
+    // Verifique se há erros de validação aqui
+    //const nameValid = nameValidate();
+    //const emailValid = emailValidate();
+
+    // if (!nameValid || !emailValid || !messageValid) {
+    // event.preventDefault(); // Impede o envio do formulário se houver erros
+    // }
+    //});
 </script>
 
 </html>
