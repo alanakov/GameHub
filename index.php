@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg w-100 m-0" data-bs-theme="dark" style="position: fixed; z-index: 200">
             <div class="container-fluid">
                 <a class="navbar-brand d-flex" href="index.php?pg=home">
                     <img src="imagens/logoGameHubVerm.png" style="width: 65px;" alt="">
@@ -28,7 +28,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse flex-grow-0 text-center" id="navbarNav">
-                    <ul class="navbar-nav position-relative"">
+                    <ul class="navbar-nav position-relative">
                         <li class=" nav-item">
                         <a class="nav-link" href="index.php?pg=home">HOME</a>
                         </li>

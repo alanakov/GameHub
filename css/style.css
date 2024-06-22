@@ -46,4 +46,16 @@ nav .navbar .container-fluid ul .navbar-nav li .nav-item a::after {
   transition: 0.5s;
 }
 
+span {
+  color: white;
+  display: none;
+}
+
+
+
+.nav-link:hover {
+  /* text-decoration: underline; */
+  border-bottom: 2px solid red;
+}
+
 /*# sourceMappingURL=style.css.map */
