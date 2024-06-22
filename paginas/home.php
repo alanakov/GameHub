@@ -79,7 +79,7 @@ $dadosGamesOutros2 = json_decode($dadosApi);
       ?>
       <div class="container p-3 d-flex justify-content-center">
         <div class="card rounded-4" style="width: <?= $gamesDestaque1->width ?>; background-color: #101010;">
-          <a class="text-decoration-none" href="">
+          <a class="text-decoration-none" href=" <?= $gamesDestaque1->endereco ?>">
             <img src="<?= $gamesDestaque1->banner ?>" class="card-img-top rounded-top-4" alt="...">
             <div class="card-body">
               <p class="card-text text-white"><?= $gamesDestaque1->nome ?> </p>
@@ -103,7 +103,7 @@ $dadosGamesOutros2 = json_decode($dadosApi);
       ?>
       <div class="container p-3 d-flex justify-content-center">
         <div class="card rounded-4" style="width: <?= $gamesOutros->width ?>; background-color: #101010;">
-          <a class="text-decoration-none" href="">
+        <a class="text-decoration-none" href=" <?= $gamesOutros->endereco ?>">
             <img src="<?= $gamesOutros->banner ?>" class="card-img-top rounded-top-4" alt="...">
             <div class="card-body">
               <p class="card-text text-white"><?= $gamesOutros->nome ?> </p>
@@ -122,7 +122,7 @@ $dadosGamesOutros2 = json_decode($dadosApi);
       ?>
       <div class="container p-3 d-flex justify-content-center">
         <div class="card rounded-4" style="width: <?= $gamesOutros2->width ?>; background-color: #101010;">
-          <a class="text-decoration-none" href="">
+        <a class="text-decoration-none" href=" <?= $gamesOutros2->endereco ?>">
             <img src="<?= $gamesOutros2->banner ?>" class="card-img-top rounded-top-4" alt="...">
             <div class="card-body">
               <p class="card-text text-white"><?= $gamesOutros2->nome ?> </p>
