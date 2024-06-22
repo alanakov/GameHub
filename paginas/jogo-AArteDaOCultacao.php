@@ -1,4 +1,4 @@
-<img class="w-100" src="imagens/meowtopiaBanner.jpg" alt="A arte da Ocultação">
+<img class="w-100" src="imagens/aArteDaOcultacaoBanner.jpeg" alt="A arte da Ocultação">
 
 <div class="d-xl-flex flex-xl-row">
     <div class="d-flex flex-column m-5 gap-3">

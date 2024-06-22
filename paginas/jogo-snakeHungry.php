@@ -1,4 +1,4 @@
-<img class="w-100" src="imagens/meowtopiaBanner.jpg" alt="Snake Hungry">
+<img class="w-100" src="imagens/snakeHungryBanner.jpeg" alt="Snake Hungry">
 
 <div class="d-xl-flex flex-xl-row">
     <div class="d-flex flex-column m-5 gap-3">

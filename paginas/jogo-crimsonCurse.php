@@ -1,4 +1,4 @@
-<img class="w-100" src="imagens/meowtopiaBanner.jpg" alt="Crimson Curse">
+<img class="w-100" src="imagens/crimsonCurseBanner.jpg" alt="Crimson Curse">
 
 <div class="d-xl-flex flex-xl-row">
     <div class="d-flex flex-column m-5 gap-3">
