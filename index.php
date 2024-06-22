@@ -59,26 +59,27 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="form">
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label text-white">Nome completo:</label>
-                            <input type="text" class="form-control" id="recipient-name"
-                                placeholder="&#xf007 Digite seu nome" style="font-family: 'Poppins','FontAwesome'">
+                            <input type="text" class="form-control required" id="recipient-name" placeholder="&#xf007 Digite seu nome" style="font-family: 'Poppins','FontAwesome'" oninput="nameValidate()">
+                            <span class="span-required text-danger" style="display: none; font-size: 16px; margin-top: 1.5%">Nome deve ter no mínimo 3 caracteres</span>
                         </div>
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label text-white">E-mail:</label>
-                            <input type="text" class="form-control" id="recipient-name"
-                                placeholder="&#xf0e0 exemplo@exem.com" style="font-family: 'Poppins','FontAwesome'">
+                            <input type="email" class="form-control required" id="recipient-name" placeholder="&#xf0e0 exemplo@exem.com" style="font-family: 'Poppins','FontAwesome'" oninput="emailValidate()">
+                            <span class="span-required text-danger" style="display: none; font-size: 16px; margin-top: 1.5%">Digite um e-mail válido</span>
                         </div>
                         <div class="mb-3">
                             <label for="message-text" class="col-form-label text-white">Mensagem:</label>
-                            <textarea class="form-control" id="message-text"></textarea>
+                            <textarea class="form-control required" id="message-text" oninput="messageValidate()"></textarea>
+                            <span class="span-required" style="display: none; font-size: 16px; margin-top: 1.5%; color: #979797">Digite a mensagem que deseja enviar</span>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CANCELAR</button>
-                    <button type="button" class="btn btn-danger">ENVIAR</button>
+                    <button type="submit" value="Submit" class="btn btn-danger">ENVIAR</button>
                 </div>
             </div>
         </div>
@@ -144,5 +145,44 @@
         </div>
     </footer>
 </body>
+
+<script>
+    const form = document.getElementById('form');
+    const campos = document.querySelectorAll('.required');
+    const spans = document.querySelectorAll('.span-required');
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        console.log('asdasdwa');
+    });
+
+    function setError(index) {
+        campos[index].style.border = '1px solid #e63636';
+        spans[index].style.display = 'block';
+    }
+
+    function removeError(index) {
+        campos[index].style.border = '';
+        spans[index].style.display = 'none';
+    }
+
+
+    function nameValidate() {
+        if(campos[0].value.length < 3) {
+            setError(0);
+        } else {
+            removeError(0);
+        }
+    }
+
+    function emailValidate() {
+        if(!emailRegex.test(campos[1].value)) {
+            setError(1);
+        } else {
+            removeError(1);
+        }
+    }
+</script>
 
 </html>
