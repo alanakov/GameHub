@@ -94,7 +94,6 @@
                         <button type="submit" value="Enviar" class="btn btn-danger button"
                             onclick="messageSent()">ENVIAR</button>
                     </div>
-                    <p>SUA MENSAGEM FOI ENVIADA!</p>
                 </form>
             </div>
         </div>

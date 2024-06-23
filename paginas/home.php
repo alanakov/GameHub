@@ -24,13 +24,13 @@ $dadosApi = file_get_contents($urlGamesOutros2, false, stream_context_create($ar
 $dadosGamesOutros2 = json_decode($dadosApi);
 ?>
 
-<div id="carouselExampleIndicators" class="carousel slide pt-5" data-bs-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide pt-5" data-bs-ride="true">
   <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-interval="1" data-bs-slide-to="0" class="active"
       aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-interval="1" data-bs-slide-to="1"
       aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+    <button type="button" data-bs-target="#carouselExampleIndicators"data-bs-interval="1" data-bs-slide-to="2"
       aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner">

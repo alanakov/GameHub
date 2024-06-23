@@ -44,7 +44,7 @@
     <div class="d-flex mt-5">
         <div class="m-5">
             <p class="text-white fs-3 fw-semibold">Descrição</p>
-            <p class="text-white">CYBERGUN</p>
+            <p class="text-white">Num mundo devastado pela tecnologia um cyborg decide se revoltar contra seu antigo parceiro de guerra, seu irmão e único parente vivo, mas para isso terá que invadir sua base cheia de robôs.</p>
 
 
             <div class="mt-xl-5 d-none d-md-block">
