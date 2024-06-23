@@ -48,7 +48,7 @@
 
 
             <div class="mt-xl-5 d-none d-md-block">
-                <a href="Snake/index.html" target=”_blank” class="btn bg-danger text-white fs-6 fw-semibold px-5 p-2 p-xl-3 d-flex justify-content-center mx-xl-5" style="margin-top: 11.5em">JOGAR AGORA</a>
+                <a href="jogos/Snake/index.html" target=”_blank” class="btn bg-danger text-white fs-6 fw-semibold px-5 p-2 p-xl-3 d-flex justify-content-center mx-xl-5" style="margin-top: 11.5em">JOGAR AGORA</a>
             </div>
             <div class="d-md-none d-block mt-5 text-center text-danger">
                 <p>O JOGO ESTÁ DISPONÍVEL SOMENTE PARA COMPUTADORES</p>
