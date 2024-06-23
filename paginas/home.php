@@ -15,22 +15,22 @@ $urlGamesDestaque1 = "https://localhost/GameHub/api/gamesDestaque1.php";
 $dadosApi = file_get_contents($urlGamesDestaque1, false, stream_context_create($arrContextOptions));
 $dadosGamesDestaqueApi1 = json_decode($dadosApi);
 
-$urlGamesOutros= "https://localhost/GameHub/api/gamesOutros.php";
+$urlGamesOutros = "https://localhost/GameHub/api/gamesOutros.php";
 $dadosApi = file_get_contents($urlGamesOutros, false, stream_context_create($arrContextOptions));
 $dadosGamesOutros = json_decode($dadosApi);
 
-$urlGamesOutros2= "https://localhost/GameHub/api/gamesOutros2.php";
+$urlGamesOutros2 = "https://localhost/GameHub/api/gamesOutros2.php";
 $dadosApi = file_get_contents($urlGamesOutros2, false, stream_context_create($arrContextOptions));
 $dadosGamesOutros2 = json_decode($dadosApi);
 ?>
 
 <div id="carouselExampleIndicators" class="carousel slide pt-5" data-bs-ride="true">
   <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-interval="1" data-bs-slide-to="0" class="active"
-      aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-interval="1" data-bs-slide-to="0"
+      class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-interval="1" data-bs-slide-to="1"
       aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators"data-bs-interval="1" data-bs-slide-to="2"
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-interval="1" data-bs-slide-to="2"
       aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner">
@@ -56,13 +56,14 @@ $dadosGamesOutros2 = json_decode($dadosApi);
   </button>
 </div>
 
-<div data-aos="fade-up">                                                                                               <!-- JOGOS EM DESTAQUE -->
+<div data-aos="fade-up"> <!-- JOGOS EM DESTAQUE -->
   <p class="fs-4 text-white text-center mt-5"><strong>JOGOS EM DESTAQUES</strong></p>
 
   <div class="m-5 d-flex justify-content-center">
     <a class="text-decoration-none" href="index.php?pg=jogo-meowtopia">
       <div class="card card-game rounded-4" style="background-color: #101010;">
-        <p class="fs-6 fs-md-1  bg-danger text-white p-2 m-0 rounded-end-3 position-absolute d-flex float-end">MAIS JOGADOS</p>
+        <p class="fs-6 fs-md-1  bg-danger text-white p-2 m-0 rounded-end-3 position-absolute d-flex float-end">MAIS
+          JOGADOS</p>
         <img src="imagens/meowtopiaBanner.jpg" class="card-img-top rounded-top-4" alt="...">
         <div class="card-body">
           <p class="card-text text-white">Meowtopia</p>
@@ -92,9 +93,9 @@ $dadosGamesOutros2 = json_decode($dadosApi);
     }
     ?>
   </div>
-</div>                                                                                                                 <!-- FIM JOGOS EM DESTAQUE -->
+</div> <!-- FIM JOGOS EM DESTAQUE -->
 
-<div data-aos="fade-up">                                                                                               <!-- OUTROS TÍTULOS -->
+<div data-aos="fade-up"> <!-- OUTROS TÍTULOS -->
   <p class="fs-4 text-white text-center mt-5"><strong>EXPLORE MAIS TÍTULOS</strong></p>
 
   <div class="cards container d-md-flex justify-content-center">
@@ -103,7 +104,7 @@ $dadosGamesOutros2 = json_decode($dadosApi);
       ?>
       <div class="container p-3 d-flex justify-content-center">
         <div class="card card-game rounded-4" style="width: <?= $gamesOutros->width ?>; background-color: #101010;">
-        <a class="text-decoration-none" href=" <?= $gamesOutros->endereco ?>">
+          <a class="text-decoration-none" href=" <?= $gamesOutros->endereco ?>">
             <img src="<?= $gamesOutros->banner ?>" class="card-img-top rounded-top-4" alt="...">
             <div class="card-body">
               <p class="card-text text-white"><?= $gamesOutros->nome ?> </p>
@@ -122,7 +123,7 @@ $dadosGamesOutros2 = json_decode($dadosApi);
       ?>
       <div class="container p-3 d-flex justify-content-center">
         <div class="card card-game rounded-4" style="width: <?= $gamesOutros2->width ?>; background-color: #101010;">
-        <a class="text-decoration-none" href=" <?= $gamesOutros2->endereco ?>">
+          <a class="text-decoration-none" href=" <?= $gamesOutros2->endereco ?>">
             <img src="<?= $gamesOutros2->banner ?>" class="card-img-top rounded-top-4" alt="...">
             <div class="card-body">
               <p class="card-text text-white"><?= $gamesOutros2->nome ?> </p>
@@ -134,5 +135,8 @@ $dadosGamesOutros2 = json_decode($dadosApi);
       <?php
     }
     ?>
+  </div>
+  <div class="allgames d-flex justify-content-center ">
+    <a class="text-white pt-5 text-decoration-none" href="index.php?pg=all-games">VER TODOS OS JOGOS</a>
   </div>
 </div>
