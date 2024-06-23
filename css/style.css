@@ -51,11 +51,12 @@ span {
   display: none;
 }
 
+.card {
+  transition: all 0.3s;
+}
 
-
-.nav-link:hover {
-  /* text-decoration: underline; */
-  border-bottom: 2px solid red;
+.card:hover {
+  transform: scale(1.15);
 }
 
 /*# sourceMappingURL=style.css.map */
