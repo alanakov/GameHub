@@ -9,8 +9,8 @@
     "width" => "18rem",
     "endereco" => "index.php?pg=jogo-CYBERGUN");
 
-    $games[3] = array("id"=>3, "nome"=>"Flyanp Chicken", "descricao"=>"<p>Em um mundo onde a civilização sucumbiu a uma terrível epidemia zumbi, um pequeno grupo de sobreviventes liderado por Alex, um ex-engenheiro brilhante, encontrou refúgio dentro dos muros de uma antiga fortaleza.</p>",
-    "genero"=>"Aventura • Terror","banner"=>"imagens/flyanpChicken.webp",
+    $games[3] = array("id"=>3, "nome"=>"Flying Chicken", "descricao"=>"<p>Em um mundo onde a civilização sucumbiu a uma terrível epidemia zumbi, um pequeno grupo de sobreviventes liderado por Alex, um ex-engenheiro brilhante, encontrou refúgio dentro dos muros de uma antiga fortaleza.</p>",
+    "genero"=>"Arcade • Casual","banner"=>"imagens/flyanpChicken.webp",
     "width" => "18rem",
     "endereco" => "index.php?pg=jogo-flyanpChicken");
 

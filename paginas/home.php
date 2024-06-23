@@ -59,9 +59,9 @@ $dadosGamesOutros2 = json_decode($dadosApi);
 <div>   <!-- JOGOS EM DESTAQUE -->
   <p class="fs-4 text-white mt-5 ms-5"><strong>JOGOS EM DESTAQUES</strong></p>
 
-  <div class=" m-5 d-flex justify-content-center">
+  <div class="m-5 d-flex justify-content-center">
     <a class="text-decoration-none" href="index.php?pg=jogo-meowtopia">
-      <div class="card rounded-4" style="width: 64rem; background-color: #101010;">
+      <div class="card card-game rounded-4" style="width: 64rem; background-color: #101010;">
         <p class="bg-danger text-white p-2 m-0 rounded-end-3 position-absolute d-flex float-end">MAIS JOGADOS</p>
         <img src="imagens/meowtopiaBanner.jpg" class="card-img-top rounded-top-4" alt="...">
         <div class="card-body">
@@ -78,7 +78,7 @@ $dadosGamesOutros2 = json_decode($dadosApi);
     foreach ($dadosGamesDestaqueApi1 as $gamesDestaque1) {
       ?>
       <div class="container p-3 d-flex justify-content-center">
-        <div class="card rounded-4" style="width: <?= $gamesDestaque1->width ?>; background-color: #101010;">
+        <div class="card card-game rounded-4" style="width: <?= $gamesDestaque1->width ?>; background-color: #101010;">
           <a class="text-decoration-none" href=" <?= $gamesDestaque1->endereco ?>">
             <img src="<?= $gamesDestaque1->banner ?>" class="card-img-top rounded-top-4" alt="...">
             <div class="card-body">
@@ -102,7 +102,7 @@ $dadosGamesOutros2 = json_decode($dadosApi);
     foreach ($dadosGamesOutros as $gamesOutros) {
       ?>
       <div class="container p-3 d-flex justify-content-center">
-        <div class="card rounded-4" style="width: <?= $gamesOutros->width ?>; background-color: #101010;">
+        <div class="card card-game rounded-4" style="width: <?= $gamesOutros->width ?>; background-color: #101010;">
         <a class="text-decoration-none" href=" <?= $gamesOutros->endereco ?>">
             <img src="<?= $gamesOutros->banner ?>" class="card-img-top rounded-top-4" alt="...">
             <div class="card-body">
@@ -121,7 +121,7 @@ $dadosGamesOutros2 = json_decode($dadosApi);
     foreach ($dadosGamesOutros2 as $gamesOutros2) {
       ?>
       <div class="container p-3 d-flex justify-content-center">
-        <div class="card rounded-4" style="width: <?= $gamesOutros2->width ?>; background-color: #101010;">
+        <div class="card card-game rounded-4" style="width: <?= $gamesOutros2->width ?>; background-color: #101010;">
         <a class="text-decoration-none" href=" <?= $gamesOutros2->endereco ?>">
             <img src="<?= $gamesOutros2->banner ?>" class="card-img-top rounded-top-4" alt="...">
             <div class="card-body">

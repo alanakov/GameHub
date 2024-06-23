@@ -13,7 +13,7 @@ $dadosApi = file_get_contents($urlEquipe, false, stream_context_create($arrConte
 $dadosEquipeApi = json_decode($dadosApi);
 ?>
 
-<p class="text-white text-center mt-5 fs-3 fw-bold">CONHEÇA NOSSA EQUIPE!</p>
+<p class="text-white text-center mt-5 fs-3 fw-bold" style="margin-top: 70px">CONHEÇA NOSSA EQUIPE!</p>
 
 <div class=" m-5 d-flex justify-content-center">
       <div class="card rounded-4" style="width: 20rem; background-color: #101010;">

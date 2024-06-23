@@ -1,4 +1,4 @@
-<img class="w-100" src="imagens/stardewValleyBanner.jpg" alt="Stardew Valley">
+<img class="w-100" src="imagens/stardewValleyBanner.jpg" alt="Stardew Valley" style="margin-top: 70px">
 
 <div class="d-xl-flex flex-xl-row">
     <div class="d-flex flex-column m-5 gap-3">

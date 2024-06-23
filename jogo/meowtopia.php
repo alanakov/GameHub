@@ -1,1 +1,0 @@
-<img src="imagens/meowtopia.jpg" alt="">

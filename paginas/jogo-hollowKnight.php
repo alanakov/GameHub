@@ -1,4 +1,4 @@
-<img class="w-100" src="imagens/hollowKnightBanner.jpg" alt="Hollow Knight">
+<img class="w-100" src="imagens/hollowKnightBanner.jpg" alt="Hollow Knight" style="margin-top: 70px">
 
 <div class="d-xl-flex flex-xl-row">
     <div class="d-flex flex-column m-5 gap-3">
@@ -44,7 +44,7 @@
     <div class="d-flex mt-5">
         <div class="m-5">
             <p class="text-white fs-3 fw-semibold">Descrição</p>
-            <p class="text-white">Hollow Knight</p>
+            <p class="text-white">Hollow Knight é um jogo de ação e aventura em estilo metroidvania 2D que se passa em Hallownest e Deepnest, antigos reinos fictícios. O jogador controla um silencioso receptáculo enquanto explora um mundo subterrâneo. O cavaleiro utiliza uma arma pontiaguda, tanto em combate quanto para interação com o ambiente.</p>
 
 
             <div class="mt-xl-5 d-none d-md-block">
