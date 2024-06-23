@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg w-100" data-bs-theme="dark" style="position: fixed; z-index: 200; ">
+        <nav class="navbar navbar-expand-lg w-100" data-bs-theme="dark" style="position: fixed; z-index: 200; top: 0 ">
             <div class="container-fluid">
                 <a class="navbar-brand d-flex" href="index.php?pg=home">
                     <img src="imagens/logoGameHubVerm.png" style="width: 65px;" alt="">

@@ -56,13 +56,13 @@ $dadosGamesOutros2 = json_decode($dadosApi);
   </button>
 </div>
 
-<div data-aos="fade-up">   <!-- JOGOS EM DESTAQUE -->
+<div data-aos="fade-up">                                                                                               <!-- JOGOS EM DESTAQUE -->
   <p class="fs-4 text-white text-center mt-5"><strong>JOGOS EM DESTAQUES</strong></p>
 
   <div class="m-5 d-flex justify-content-center">
     <a class="text-decoration-none" href="index.php?pg=jogo-meowtopia">
       <div class="card card-game rounded-4" style="background-color: #101010;">
-        <p class="bg-danger text-white p-2 m-0 rounded-end-3 position-absolute fs-6 fs-md-1 d-flex float-end">MAIS JOGADOS</p>
+        <p class="fs-6 fs-md-1  bg-danger text-white p-2 m-0 rounded-end-3 position-absolute d-flex float-end">MAIS JOGADOS</p>
         <img src="imagens/meowtopiaBanner.jpg" class="card-img-top rounded-top-4" alt="...">
         <div class="card-body">
           <p class="card-text text-white">Meowtopia</p>
@@ -92,9 +92,9 @@ $dadosGamesOutros2 = json_decode($dadosApi);
     }
     ?>
   </div>
-</div>                                                                           <!-- FIM JOGOS EM DESTAQUE -->
+</div>                                                                                                                 <!-- FIM JOGOS EM DESTAQUE -->
 
-<div data-aos="fade-up">                                                                            <!-- OUTROS TÍTULOS -->
+<div data-aos="fade-up">                                                                                               <!-- OUTROS TÍTULOS -->
   <p class="fs-4 text-white text-center mt-5"><strong>EXPLORE MAIS TÍTULOS</strong></p>
 
   <div class="cards container d-md-flex justify-content-center">
