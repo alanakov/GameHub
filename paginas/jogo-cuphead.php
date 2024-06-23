@@ -20,13 +20,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="imagens/foto-meowtopia-grande-1.jpeg" class="d-block" alt="Imagem do jogo Cuphead">
+                    <img src="imagens/foto-cuphead1.jpg" class="d-block" alt="Imagem do jogo Cuphead">
                 </div>
                 <div class="carousel-item">
-                    <img src="imagens/foto-meowtopia-grande-2.jpeg" class="d-block" alt="Imagem do jogo Cuphead">
+                    <img src="imagens/foto-cuphead2.jpg" class="d-block" alt="Imagem do jogo Cuphead">
                 </div>
                 <div class="carousel-item">
-                    <img src="imagens/foto-meowtopia-grande-3.jpeg" class="d-block" alt="Imagem do jogo Cuphead">
+                    <img src="imagens/foto-cuphead3.jpg" class="d-block" alt="Imagem do jogo Cuphead">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -44,7 +44,7 @@
     <div class="d-flex mt-5">
         <div class="m-5">
             <p class="text-white fs-3 fw-semibold">Descrição</p>
-            <p class="text-white">Cuphead</p>
+            <p class="text-white">Cuphead apresenta dois jogadores que controlam o personagem-título e seu irmão Mugman, em uma aventura através da fictícia Inkwell Isle para derrotar uma série de chefes para pagar uma dívida adquirida com o diabo.</p>
 
 
             <div class="mt-xl-5 d-none d-md-block">

@@ -20,13 +20,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="imagens/foto-meowtopia-grande-1.jpeg" class="d-block" alt="Imagem do jogo Hollow Knight">
+                    <img src="imagens/foto-hollow1.jpg" class="d-block" alt="Imagem do jogo Hollow Knight">
                 </div>
                 <div class="carousel-item">
-                    <img src="imagens/foto-meowtopia-grande-2.jpeg" class="d-block" alt="Imagem do jogo Hollow Knight">
+                    <img src="imagens/foto-hollow2.jpg" class="d-block" alt="Imagem do jogo Hollow Knight">
                 </div>
                 <div class="carousel-item">
-                    <img src="imagens/foto-meowtopia-grande-3.jpeg" class="d-block" alt="Imagem do jogo Hollow Knight">
+                    <img src="imagens/foto-hollow3.jpg" class="d-block" alt="Imagem do jogo Hollow Knight">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

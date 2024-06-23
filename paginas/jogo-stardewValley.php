@@ -20,13 +20,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="imagens/foto-meowtopia-grande-1.jpeg" class="d-block" alt="Imagem do jogo Stardew Valley">
+                    <img src="imagens/foto-stardew1.jpg" class="d-block" alt="Imagem do jogo Stardew Valley">
                 </div>
                 <div class="carousel-item">
-                    <img src="imagens/foto-meowtopia-grande-2.jpeg" class="d-block" alt="Imagem do jogo Stardew Valley">
+                    <img src="imagens/foto-stardew2.jpg" class="d-block" alt="Imagem do jogo Stardew Valley">
                 </div>
                 <div class="carousel-item">
-                    <img src="imagens/foto-meowtopia-grande-3.jpeg" class="d-block" alt="Imagem do jogo Stardew Valley">
+                    <img src="imagens/foto-stardew3.jpg" class="d-block" alt="Imagem do jogo Stardew Valley">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

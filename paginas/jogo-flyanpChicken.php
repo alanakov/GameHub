@@ -20,13 +20,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="imagens/foto-meowtopia-grande-1.jpeg" class="d-block" alt="Imagem do jogo Flyanp Chicken">
+                    <img src="imagens/foto-flyanp1.jpg" class="d-block" alt="Imagem do jogo Flyanp Chicken">
                 </div>
                 <div class="carousel-item">
-                    <img src="imagens/foto-meowtopia-grande-2.jpeg" class="d-block" alt="Imagem do jogo Flyanp Chicken">
+                    <img src="imagens/foto-flyanp2.jpg" class="d-block" alt="Imagem do jogo Flyanp Chicken">
                 </div>
                 <div class="carousel-item">
-                    <img src="imagens/foto-meowtopia-grande-3.jpeg" class="d-block" alt="Imagem do jogo Flyanp Chicken">
+                    <img src="imagens/foto-flyanp3.jpg" class="d-block" alt="Imagem do jogo Flyanp Chicken">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

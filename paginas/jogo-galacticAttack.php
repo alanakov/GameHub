@@ -20,13 +20,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="imagens/foto-meowtopia-grande-1.jpeg" class="d-block" alt="Imagem do jogo Galactic Attack">
+                    <img src="imagens/foto-galactic1.jpg" class="d-block" alt="Imagem do jogo Galactic Attack">
                 </div>
                 <div class="carousel-item">
-                    <img src="imagens/foto-meowtopia-grande-2.jpeg" class="d-block" alt="Imagem do jogo Galactic Attack">
+                    <img src="imagens/foto-galactic2.jpg" class="d-block" alt="Imagem do jogo Galactic Attack">
                 </div>
                 <div class="carousel-item">
-                    <img src="imagens/foto-meowtopia-grande-3.jpeg" class="d-block" alt="Imagem do jogo Galactic Attack">
+                    <img src="imagens/foto-galactic3.jpg" class="d-block" alt="Imagem do jogo Galactic Attack">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
