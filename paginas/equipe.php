@@ -15,7 +15,7 @@ $dadosEquipeApi = json_decode($dadosApi);
 
 <p class="text-white text-center mt-5 fs-3 fw-bold" style="margin-top: 70px">CONHEÇA NOSSA EQUIPE!</p>
 
-<div class=" m-5 d-flex justify-content-center">
+<div data-aos="fade-up" class=" m-5 d-flex justify-content-center">
       <div class="card rounded-4" style="width: 20rem; background-color: #101010;">
         <p class="bg-danger text-white p-2 m-0 rounded-end-3 position-absolute d-flex float-end">CEO</p>
         <img src="imagens/alanaKov.jpg" class="card-img-top rounded-top-4" alt="Alana Kovalski">
@@ -26,7 +26,7 @@ $dadosEquipeApi = json_decode($dadosApi);
       </div>
   </div>
 
-<div class="cards container d-md-flex justify-content-center">
+<div data-aos="fade-up" class="cards container d-md-flex justify-content-center">
     <?php
     foreach ($dadosEquipeApi as $equipe) {
       ?>

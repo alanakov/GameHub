@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="imagens/logoGameHubBranca.png">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/6578787cbc.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -160,6 +161,10 @@
     </footer>
 </body>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 <script>
     const form = document.getElementById('form');
     const campos = document.querySelectorAll('.required');

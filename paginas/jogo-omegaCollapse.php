@@ -1,6 +1,6 @@
 <img class="w-100" src="imagens/omegaCollapseBanner.jpg" alt="Omega Collapse" style="margin-top: 70px">
 
-<div class="d-xl-flex flex-xl-row">
+<div data-aos="fade-up" class="d-xl-flex flex-xl-row">
     <div class="d-flex flex-column m-5 gap-3">
         <div class="d-flex">
             <h2 class="text-white"><strong>Omega Collapse</strong></h2>

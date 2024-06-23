@@ -56,7 +56,7 @@ $dadosGamesOutros2 = json_decode($dadosApi);
   </button>
 </div>
 
-<div>   <!-- JOGOS EM DESTAQUE -->
+<div data-aos="fade-up">   <!-- JOGOS EM DESTAQUE -->
   <p class="fs-4 text-white mt-5 ms-5"><strong>JOGOS EM DESTAQUES</strong></p>
 
   <div class="m-5 d-flex justify-content-center">
@@ -94,7 +94,7 @@ $dadosGamesOutros2 = json_decode($dadosApi);
   </div>
 </div>                                                                           <!-- FIM JOGOS EM DESTAQUE -->
 
-<div>                                                                            <!-- OUTROS TÍTULOS -->
+<div data-aos="fade-up">                                                                            <!-- OUTROS TÍTULOS -->
   <p class="fs-4 text-white mt-5 ms-5"><strong>EXPLORE MAIS TÍTULOS</strong></p>
 
   <div class="cards container d-md-flex justify-content-center">
