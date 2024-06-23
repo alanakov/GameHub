@@ -152,7 +152,7 @@
         crossorigin="anonymous"></script>
 
     <footer>
-        <div class="footer text-center p-3">
+        <div class="footer text-center p-3 mt-5">
             <a href="#">
                 <img src="imagens/LogoGameHubBranca.png" alt="GameHub">
             </a>

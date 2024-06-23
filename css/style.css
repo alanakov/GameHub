@@ -64,4 +64,16 @@ span {
   transform: scale(1.15);
 }
 
+.carousel-item img {
+  object-fit: cover;
+}
+
+@media (max-width: 575.98px) {
+  .carousel-item img {
+    object-fit: cover;
+    height: 360px;
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

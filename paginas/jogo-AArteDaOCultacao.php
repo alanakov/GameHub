@@ -1,4 +1,4 @@
-<img class="w-100" src="imagens/aArteDaOcultacaoBanner.jpeg" alt="A arte da Ocultação" style="margin-top: 70px">
+<img class="w-100" src="imagens/aArteDaOcultacaoBanner.jpeg" alt="A arte da Ocultação" style="margin-top: 70px;">
 
 <div data-aos="fade-up" class="d-xl-flex flex-xl-row">
     <div class="d-flex flex-column m-5 gap-3">
@@ -26,7 +26,7 @@
                     <img src="imagens/foto-arte2.jpg" class="d-block" alt="Imagem do jogo A arte da Ocultação">
                 </div>
                 <div class="carousel-item">
-                    <img src="imagens/foto-arte3.jpg" class="d-block" alt="Imagem do jogo A arte da Ocultação">
+                    <img src="imagens/foto-arte3.jpg" class="d-blockl" alt="Imagem do jogo A arte da Ocultação">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
